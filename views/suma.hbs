@@ -1,0 +1,23 @@
+<form action="/sumar" method="post">
+  <label for="txtentero1">Entero 1</label>
+  <input type="text" id="txtentero1" name="txtentero1"
+    value="{{txtentero1}}" placeholder="entero1"
+    />
+    <br />
+    <label for="txtentero2">Entero 2</label>
+   <input type="text" id="txtentero2" name="txtentero2"
+    value="{{txtentero2}}" placeholder="entero2"
+    />
+    <br />
+    <input type="submit" value="Enviar" id="btnSubmit"
+      name="btnSubmit"/>
+</form>
+<div>
+  <ul>
+    {{#each msg}}
+      <li>
+        {{this}}
+      </li>
+      {{/each}}
+  </ul>
+</div>
